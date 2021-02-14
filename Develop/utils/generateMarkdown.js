@@ -7,11 +7,11 @@ function renderLicenseBadge(license)
 {
   if(license != 'None')
   {
-    return `https://img.shields.io/badge/license-${license}-blue.svg`
+    return `![yesBadge](https://img.shields.io/badge/license-${license}-blue.svg)`
   }
   else
   {
-    return `https://img.shields.io/badge/license-None-lightgrey.svg`
+    return `![noBadge](https://img.shields.io/badge/license-None-lightgrey.svg)`
   }
 }
 
@@ -21,12 +21,12 @@ function renderLicenseSection(license)
 {
   if(license != 'None')
   {
-    return `# License 
+    return `
     \n This project is protected under the following license '${license}'`
   }
   else
   {
-    return `# License 
+    return `
     \n This project is not protected under any license`
   }
 }
@@ -34,33 +34,33 @@ function renderLicenseSection(license)
 function generateMarkdown(data) 
 {return `
   # Project Title - ${data.title} 
- 
-  ### Description
+  ${renderLicenseBadge(data.license)}
+
+  ## Description
   ${data.description}
 
-  #### Installation
+  ## Installation
   ${data.installation}
 
-  #### Usage
+  ## Usage
   ${data.usage}
   
-  ##### License
-  ${data.license}
+  ## License
+  ${renderLicenseSection(data.license)}
+  [Click here for more details](https://choosealicense.com/licenses/)
 
-  ##### Credits
+  ## Contributing
   ${data.credits}
 
-  ##### Tests
+  ## Tests
   ${data.tests}
 
-  ##### GithubUsername
-  ${data.githubUsername}
 
-  ##### Email
-  ${data.email}
-
-  ##### Questions
+  ## Questions?
   ${data.questions}
+  \n ${data.email}
+  \n [${data.githubUsername} Github Profile](https://github.com/${data.githubUsername}/)
+  
 
 `;}
 
