@@ -1,34 +1,34 @@
 
-  # Project Title - test 
-  ![yesBadge](https://img.shields.io/badge/license-Apache-blue.svg)
+  # Project Title - ReadMe Generator 
+  ![yesBadge](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
-  test
+  A javascript application that creates a custom read me file based on user answers to prompts.
 
   ## Installation
-  test
+  First clone the code via the repository link, then using your terminal navigate to the directory of the local stored folder. From there, use the command ‘Node Index,js’ to launch the application. Follow all prompts to completion. If all steps have been followed a ‘ReadMe.MD’ file should have been generated along with the terminal success message of ‘File was successfully generated’.
 
   ## Usage
-  test
+  To create a ready to use - formatted ReadMe, applicable to any project.
   
   ## License
   
     
- This project is protected under the following license 'Apache'
+ This project is protected under the following license 'MIT'
   [Click here for more details](https://choosealicense.com/licenses/)
 
   ## Contributing
-  test
+  David Fan
 
   ## Tests
-  test
+  Case 1 - Choose no license, Case 2 - Multiple contributors
 
 
   ## Questions?
-  test
+  You can reach the author through the email or github profile link provided in the readme
   
- test
+ Dfan55438@gmail.com
   
- [test Github Profile](https://github.com/test/)
+ [Dfan55438 Github Profile](https://github.com/Dfan55438/)
   
 
